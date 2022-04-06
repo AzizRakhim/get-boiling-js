@@ -15,7 +15,11 @@ elForm.addEventListener("submit", (e) => {
   elInput.value = "";
   
   setInterval(function() {
-    if(elValue > 0){
+    if(elValue == 2){
+      elValue--;
+      elItem.innerText = elValue;
+      elItem.style.animation = "endIt 1s linear";
+    } else if(elValue > 1){
       elValue--;
       elItem.innerText = elValue;
     } else{

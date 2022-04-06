@@ -370,10 +370,11 @@ body {
 }
 
 .hero__box {
-  width: 600px;
-  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+  background-color: #f6f6f6;
   border-radius: 6px;
-  border: 2px solid #ccc;
+  border: 2px solid #cfcfcf;
   padding: 20px;
   padding-bottom: 40px;
   position: absolute;
@@ -389,38 +390,57 @@ body {
 
 .hero__input {
   border: none;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #d0d0d0;
   padding: 20px 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  color: #290000;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: transparent;
 }
 
 .hero__input::-webkit-input-placeholder {
+  color: #686563;
   font-weight: 600;
+  font-size: 20px;
 }
 
 .hero__input:-ms-input-placeholder {
+  color: #686563;
   font-weight: 600;
+  font-size: 20px;
 }
 
 .hero__input::-ms-input-placeholder {
+  color: #686563;
   font-weight: 600;
+  font-size: 20px;
 }
 
 .hero__input::placeholder {
+  color: #686563;
   font-weight: 600;
+  font-size: 20px;
 }
 
 .hero__input:focus {
   outline: none;
-  border-bottom-color: #000;
+  border-bottom-color: #292929;
 }
 
 .hero__btn {
   border: none;
-  background-color: #ccc;
+  background-color: #e6e6e6;
   border-radius: 6px;
   font-size: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #00092a;
+}
+
+.hero__btn:hover {
+  background-color: #dcdcdc;
 }
 
 .hero__list {
@@ -431,7 +451,7 @@ body {
 
 .hero__item {
   border-radius: 50%;
-  background-color: orange;
+  background-color: #ff7c18;
   width: 50px;
   height: 50px;
   display: -webkit-box;
@@ -444,9 +464,62 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-animation: scaleUp 1s linear infinite both;
+          animation: scaleUp 1s linear infinite both;
 }
 
 .hero__item:not(:last-child) {
   margin-right: 15px;
+}
+
+@-webkit-keyframes scaleUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes endIt {
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes endIt {
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
