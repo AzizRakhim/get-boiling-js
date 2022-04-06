@@ -1,0 +1,59 @@
+.hero__box{
+  width: 600px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  padding-bottom: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__form{
+  margin-bottom: 20px;
+}
+
+.hero__input{
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 20px 0;
+  transition: all 0.3s ease;
+
+  &::placeholder{
+    font-weight: 600;
+  }
+
+  &:focus{
+    outline: none;
+    border-bottom-color: #000;
+  }
+}
+
+.hero__btn{
+  border: none;
+  background-color: #ccc;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+.hero__list{
+  @include list-style;
+}
+
+.hero__item{
+  border-radius: 50%;
+  background-color: orange;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+
+  &:not(:last-child){
+    margin-right: 15px;
+  }
+}
